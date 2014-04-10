@@ -241,8 +241,8 @@ class NVD3Chart:
         if 'disabled' in kwargs and kwargs['disabled']:
             data_keyvalue['disabled'] = 'true'
 
-        if 'color' in extra and extra['color']:
-            data_keyvalue['color'] = extra['color']
+        if 'color' in kwargs and kwargs['color']:
+            data_keyvalue['color'] = kwargs['color']
 
         if extra.get('date_format'):
             self.charttooltip_dateformat = extra['date_format']
